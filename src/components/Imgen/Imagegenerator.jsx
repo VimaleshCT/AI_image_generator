@@ -6,7 +6,7 @@ const Imagegenerator = () => {
   const [image_url, setImage_url] = useState("/");
   let inputRef = useRef(null);
   const [loading, setLoading] = useState(false);
-  const API_KEY = "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";
+  const API_KEY = "your api key";
   const imagegenerator = async () => {
     if (inputRef.current.value === "") {
       return 0;
@@ -42,7 +42,6 @@ const Imagegenerator = () => {
       }
     } catch (error) {
       console.error("Error fetching data:", error);
-      // Handle error, e.g., display an error message to the user
     } finally {
       setLoading(false);
     }
